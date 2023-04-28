@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Extracted Information</title>
+  </head>
+  <body>
+    <h1>Extracted Information</h1>
+    <h2>Summary</h2>
+    <p>{{ summary }}</p>
+
+    <h2>Risks</h2>
+    <ul>
+      {% for risk in risks %}
+        <li>{{ risk.label }}: {{ risk.score }}</li>
+      {% endfor %}
+    </ul>
+
+    <h2>Financial Data</h2>
+    <ul>
+      {% for key, value in financial_data.items() %}
+        <li>{{ key }}: {{ value }}</li>
+      {% endfor %}
+    </ul>
+
+    <a href="/">Back to upload</a>
+  </body>
+</html>
