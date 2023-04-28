@@ -12,7 +12,7 @@ app = Flask(__name__)
 summary_pipeline = pipeline('summarization')
 # risk_pipeline = pipeline('text-classification', model='distilbert-base-uncased', return_all_scores=True)
 
-openai.api_key = "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"
+openai.api_key = "API KEY HERE"
 
 
 def extract_financial_data(text):
