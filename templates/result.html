@@ -9,20 +9,14 @@
     <h2>Summary</h2>
     <p>{{ summary }}</p>
 
-    <h2>Risks</h2>
-    <ul>
-      {% for risk in risks %}
-        <li>{{ risk.label }}: {{ risk.score }}</li>
-      {% endfor %}
-    </ul>
-
     <h2>Financial Data</h2>
     <ul>
       {% for key, value in financial_data.items() %}
         <li>{{ key }}: {{ value }}</li>
       {% endfor %}
     </ul>
-
+    <h3>Due Diligence:</h3>
+    <p>{{ due_diligence }}</p>
     <a href="/">Back to upload</a>
   </body>
 </html>
